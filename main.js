@@ -50,7 +50,7 @@ function createWindow() {
     Menu.setApplicationMenu(menu);
 }
 // 매뉴중에 Find가 없음 
-// const menuTemplate = [];
+const menuTemplate = [];
 
 // if desktop is MAC OS X , 맥이면 처음 메뉴는 무조건 App이름이다.
 if (isMac) {
