@@ -1,0 +1,143 @@
+* {
+    font-family: 'Malgun Gothic', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #2B2E3B;
+}
+
+div {
+    color: #f1f1f1;
+    margin: auto;
+    border: 3px grey green;
+    padding: auto auto 1px 1px;
+    width: 90%;
+    /* display: flexbox; */
+}
+
+div.bottom-tail {
+    display: inline-flexbox;
+}
+
+table {
+    color: white;
+    border: solid white 1px;
+    border-left: 0px;
+    border-right: 0px;
+    /* text-align: center; */
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table>tbody>tr>th.list-tbl-th-id {
+    display: none;
+}
+
+table>tbody>tr>th.list-tbl-th {
+    position: sticky;
+    top: 0;
+    background-color: gray;
+    z-index: 3;
+}
+
+table>tbody>tr>td.tbl-td-url {
+    /* TODO : align left */
+    align-items: left;
+}
+
+table>tbody>tr>td {
+    align-items: left;
+}
+
+table>tbody>tr>.button-toolbar {
+    display: none;
+    border-top: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    left: -2px;
+    width: calc(100% + 4px);
+    z-index: 2;
+    text-align: center;
+    justify-items: center;
+}
+
+table>tbody>tr>td.in-editing .button-toolbar {
+    display: block;
+    float: left;
+}
+
+table>tbody>tr>td.tbl-td-id {
+    display: none;
+}
+
+table>tbody>tr>td>a.tbl-td-url-anchor {
+    color: rgb(217, 241, 4);
+    user-select: none;
+}
+
+table>tbody>tr>td>a.tbl-td-url-anchor:visited {
+    color: gray;
+}
+
+form.db-input-form>input[type=text] {
+    padding: 2px;
+    font-size: 15px;
+    border: 1px solid gray;
+    display: flexbox;
+    background: #f1f1f1;
+    width: 25%;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: #78797b;
+    color: white;
+}
+
+form.db-input-form>input[type=text]::placeholder {
+    color: rgb(77, 255, 0);
+    font-size: 0.8em;
+}
+
+form.db-input-form>button {
+    display: flexbox;
+    color: white;
+    background-color: #2196f3;
+    padding: 2px;
+    border: 1px solid gray;
+    font-size: 15px;
+    width: 10%;
+    user-select: none;
+}
+
+form.db-input-form>button:hover {
+    background-color: rgb(161, 101, 27);
+}
+
+.btn-primary {
+    background-color: green;
+    color: white;
+    user-select: none;
+    /* margin-right: 10px; */
+    border-radius: 15px;
+    border: 0.5;
+}
+
+.btn-warning {
+    background-color: orange;
+    color: white;
+    user-select: none;
+    /* margin-right: 10px; */
+    border-radius: 15px;
+    border: 0.5;
+}
+
+.btn-danger {
+    background-color: darkred;
+    color: whitesmoke;
+    user-select: none;
+    /* margin-right: 10px; */
+    border-radius: 15px;
+    border: 0.5;
+    vertical-align: center;
+}

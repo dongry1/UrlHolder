@@ -1,0 +1,19 @@
+{
+  "name": "url_holder_app",
+  "version": "1.0.0",
+  "description": "personal url list",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron --enable-logging --inspect ."
+  },
+  "author": "WonHeeHan",
+  "license": "MIT",
+  "dependencies": {
+    "electron-window-state": "^5.0.3",
+    "realm": "^10.14.0",
+    "underscore": "^1.13.2"
+  },
+  "devDependencies": {
+    "electron": "^17.3.1"
+  }
+}
