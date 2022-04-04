@@ -2,9 +2,16 @@ URL HOLDER
 Simple Url Holding Sample Project
 
 install and Use
+
+
 1> git clone https://github.com/dongry1/UrlHolder
+
+
 2> npm install
+
+
 3> npm start
+
 
 
 Used in this project
