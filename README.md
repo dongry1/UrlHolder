@@ -2,12 +2,12 @@ URL HOLDER
 Simple Url Holding Sample Project
 
 install and Use
-> git clone https://github.com/dongry1/UrlHolder
-> npm install
-> npm start
+1> git clone https://github.com/dongry1/UrlHolder
+2> npm install
+3> npm start
 
 
-
+Used in this project
 1) Electron
 2) Realm Offline(specifically offline)
 3) Javascript
