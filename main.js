@@ -45,22 +45,23 @@ function createWindow() {
         mainWindow = null;
     });
     // loading menu-template
-    //   const menu = Menu.buildFromTemplate(menuTemplate);
+    const menu = Menu.buildFromTemplate(menuTemplate);
     // Rendering Menu,
-    //   Menu.setApplicationMenu(menu);
+    Menu.setApplicationMenu(menu);
 }
 // 매뉴중에 Find가 없음 
 // const menuTemplate = [];
 
 // if desktop is MAC OS X , 맥이면 처음 메뉴는 무조건 App이름이다.
-// if (isMac) {
-//   menuTemplate.unshift({
-//     label: app.name,
-//     submenu: [
-//       { role: 'about' },
-//       isMac ? { label: '닫기', accelerator: 'Command+Q', role: 'close' } : { label: '닫기', accelerator: 'Ctrl+Q', role: 'close' }]
-//   });
-// }
+if (isMac) {
+    menuTemplate.unshift({
+        label: app.name,
+        submenu: [
+            { role: 'about' },
+            isMac ? { label: '닫기', accelerator: 'Command+Q', role: 'close' } : { label: '닫기', accelerator: 'Ctrl+Q', role: 'close' }
+        ]
+    });
+}
 
 app.whenReady().then(() => {
     createWindow();
