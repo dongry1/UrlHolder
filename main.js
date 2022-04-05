@@ -7,6 +7,8 @@ const { BSON } = require('realm');
 const isMac = process.platform === 'darwin'; // checking if OS is Mac
 
 let mainWindow;
+// disable hardware acceleration : not using gpu
+app.disableHardwareAcceleration()
 
 function createWindow() {
     // window size and location preservation
@@ -23,6 +25,7 @@ function createWindow() {
         height: winState.height,
         minWidth: 1300,
         minHeight: 400,
+        offscreen: true,
         resizable: true,
         // 번쩍거림 방지, 초기 바탕화면 색을 집어 넣는다.
         backgroundColor: '#2B2E3B',
@@ -62,6 +65,7 @@ if (isMac) {
         ]
     });
 }
+
 
 app.whenReady().then(() => {
     createWindow();
