@@ -10,8 +10,8 @@
   "license": "MIT",
   "dependencies": {
     "electron-window-state": "^5.0.3",
-    "realm": "^10.14.0",
-    "underscore": "^1.13.2"
+    "realm": "^10.24.0",
+    "underscore": "^1.13.6"
   },
   "devDependencies": {
     "electron": "^17.3.1"
